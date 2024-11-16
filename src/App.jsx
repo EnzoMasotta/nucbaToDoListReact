@@ -25,14 +25,16 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.2rem;
   border: none;
   border-radius: 10px;
+  background-color: snow;
 `;
 
 const FormContainer = styled.form`
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  width: 90%;
   gap: 0.5rem;
 `;
 
@@ -40,17 +42,25 @@ const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
   color: #111;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 `;
 
 const SearchBar = styled.input`
-  padding: 6px 12px;
-  width: 500px;
-  max-width: 300px;
+  flex: 1;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 `;
 
 const SearchButton = styled.button`
-  padding: ;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #596fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
 `;
 
 export default App;
