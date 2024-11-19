@@ -15,17 +15,15 @@ function App() {
 }
 
 const Wrapper = styled.section`
-  width: 700px;
+  width: 50vw;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 40px,
-    rgba(0, 0, 0, 0.12) 0px -10px 20px, rgba(0, 0, 0, 0.12) 0px 3px 4px,
-    rgba(0, 0, 0, 0.17) 0px 10px 10px, rgba(0, 0, 0, 0.09) 0px -2px 3px;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
+  padding: 2rem 0;
   border: none;
   border-radius: 10px;
   background-color: snow;
@@ -42,7 +40,6 @@ const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
   color: #111;
-  margin-top: 1.2rem;
 `;
 
 const SearchBar = styled.input`
