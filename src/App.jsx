@@ -10,6 +10,15 @@ function App() {
         <SearchBar placeholder="¿Qué tarea desea agregar?"></SearchBar>
         <SearchButton type="button">Agregar</SearchButton>
       </FormContainer>
+      <Container>
+        <Task>Tarea 1</Task>
+        <TaskButton type="button">Borrar</TaskButton>
+      </Container>
+      <Container>
+        <Task>Tarea 2</Task>
+        <TaskButton type="button">Borrar</TaskButton>
+      </Container>
+      <DeleteAll>Borrar todas</DeleteAll>
     </Wrapper>
   );
 }
@@ -27,6 +36,10 @@ const Wrapper = styled.section`
   border: none;
   border-radius: 10px;
   background-color: snow;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const FormContainer = styled.form`
@@ -34,6 +47,7 @@ const FormContainer = styled.form`
   align-items: center;
   width: 90%;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 `;
 
 const Title = styled.h1`
@@ -55,6 +69,39 @@ const SearchButton = styled.button`
   font-size: 13px;
   cursor: pointer;
   background-color: #596fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+`;
+
+const Container = styled.article`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e7e7e7;
+`;
+
+const Task = styled.p``;
+
+const TaskButton = styled.button`
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #ff4747;
+  color: white;
+  border: none;
+  border-radius: 5px;
+`;
+
+const DeleteAll = styled.button`
+  margin-top: 1rem;
+  padding: 8px 16px;
+  width: 90%;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #ff4747;
   color: white;
   border: none;
   border-radius: 5px;
